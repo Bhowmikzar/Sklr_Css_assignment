@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors and Properties</title>
+    <style>
+      /* Element Selector */
+      p {
+        color: blue;
+      }
+
+      /* Class Selector */
+      .group {
+        background-color: lightgray;
+        padding: 10px;
+      }
+
+      /* ID Selector */
+      #unique {
+        font-size: 20px;
+        color: red;
+      }
+
+      /* Attribute Selector */
+      a[href] {
+        text-decoration: none;
+        color: green;
+      }
+
+      /* Pseudo-class */
+      a:hover {
+        color: purple;
+      }
+
+      /* Pseudo-element */
+      h1::before {
+        content: "Title: ";
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to the Website</h1>
+    <p>This is a paragraph styled by element selector.</p>
+    <div class="group">
+      <p class="group">This is inside a class selector.</p>
+    </div>
+    <p id="unique">This paragraph is unique with ID selector.</p>
+    <a href="#">Hover over me</a>
+  </body>
+</html>

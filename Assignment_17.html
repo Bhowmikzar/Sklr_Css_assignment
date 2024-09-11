@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling Forms</title>
+    <style>
+      input[type="text"] {
+        padding: 10px;
+        border: 2px solid lightblue;
+        margin: 10px;
+        width: 200px;
+      }
+
+      input[type="text"]:focus {
+        border-color: blue;
+      }
+
+      input[type="submit"] {
+        background-color: lightgreen;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

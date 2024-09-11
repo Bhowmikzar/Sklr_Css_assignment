@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Flexbox</title>
+    <style>
+      .outer-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 10px;
+        padding: 20px;
+        background-color: lightgray;
+      }
+
+      .inner-container {
+        display: flex;
+        flex-direction: column;
+        background-color: lightblue;
+        padding: 10px;
+      }
+
+      .item {
+        margin: 5px;
+        padding: 10px;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="inner-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+      </div>
+      <div class="inner-container">
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+      </div>
+    </div>
+  </body>
+</html>

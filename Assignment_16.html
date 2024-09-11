@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-Classes and Pseudo-Elements</title>
+    <style>
+      a:hover {
+        color: red;
+      }
+
+      .list-item:nth-child(odd) {
+        background-color: lightgray;
+      }
+
+      p::before {
+        content: "Note: ";
+        font-weight: bold;
+      }
+
+      p::after {
+        content: " (end)";
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">Hover over me</a>
+    <ul>
+      <li class="list-item">Item 1</li>
+      <li class="list-item">Item 2</li>
+      <li class="list-item">Item 3</li>
+    </ul>
+    <p>This is a paragraph with pseudo-elements.</p>
+  </body>
+</html>
